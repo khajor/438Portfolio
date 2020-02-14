@@ -1,0 +1,41 @@
+$dark: rgb(14, 20, 24);
+$peri4: rgb(15, 29, 62); 
+$peri3: rgb(75, 97, 188);
+$peri2: rgb(64, 96, 229);
+$peri1: rgb(116, 151, 233);
+$light: rgb(233, 240, 255);
+
+html,body,#root{
+	height:100%;
+	position: fixed;
+	top:0;left:0;bottom:0;right:0;
+	margin: 0;
+} 
+html{
+	font-size:16px;
+	font-family: sans-serif;
+}
+
+body {
+	background: rgb(255, 255, 255);
+}
+
+.header{
+	background-color: $peri4;
+	height: 3rem;
+	display:flex;
+	flex-direction: row;
+	width:100%;
+}
+
+.header-nav {
+	a {
+		color: $light;
+		text-decoration: none;
+		padding: 1rem;
+
+		&[aria-current='page'] {
+			color: black;
+		}
+	}
+}
