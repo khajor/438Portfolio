@@ -1,13 +1,14 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
 function HomePage() {
 	return (
 		<Layout title="Home page">
-			<p>This is a paragraph.</p>
+			<div className="section intro">
+
+			</div>
 		</Layout>
-	);
+	)
 }
 
 export default HomePage;

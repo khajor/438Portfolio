@@ -1,5 +1,7 @@
+@import '~antd/dist/antd.css';
 $dark: rgb(14, 20, 24);
-$peri4: rgb(15, 29, 62); 
+$peri5: rgb(16, 15, 62); 
+$peri4: rgb(25, 28, 88);
 $peri3: rgb(75, 97, 188);
 $peri2: rgb(64, 96, 229);
 $peri1: rgb(116, 151, 233);
@@ -21,21 +23,60 @@ body {
 }
 
 .header{
-	background-color: $peri4;
+	background-color: $peri5;
 	height: 3rem;
 	display:flex;
 	flex-direction: row;
 	width:100%;
 }
 
-.header-nav {
+.sider{
+	background-color: $peri5;
+	padding-top: 10px;
 	a {
 		color: $light;
 		text-decoration: none;
-		padding: 1rem;
 
 		&[aria-current='page'] {
 			color: black;
 		}
+
+		:hover{
+			color: $peri2
+		}
+	}
+}
+
+.sidemenu{
+	position: absolute;
+	right: 0;
+}
+
+.intro{
+	background-color: $peri4;
+	height: 100vh;
+}
+
+
+
+.ant-menu-item {
+	padding: 0 !important;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;	
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	background-color: $peri5;
+	color: $light;
+
+	p{
+		margin:0;
+		font-size:1rem;
 	}
 }
