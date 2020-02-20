@@ -2,7 +2,8 @@ import React from 'react';
 import {useState} from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import { Menu, Icon, Button, Layout } from 'antd';
+import { Icon, Button, Layout } from 'antd';
+import {Menu, MenuItem} from './Menu.js';
 
 function TopLayout({ title, children }) {
 	const data = useStaticQuery(
@@ -21,56 +22,48 @@ function TopLayout({ title, children }) {
 	);
 
 
-	const [collapsed, toggleCollapsed] = useState(true)
+	const [visible, toggleVisible] = useState(true)
 
 	const {Sider} = Layout
 
-	const sidemenu = (
-		<div className="sidemenu">
-			<div>
-			<Button type="link"  
-			className='navbutton' 
-			onClick={()=>toggleCollapsed(!collapsed)} 
-			style={{ marginBottom: 16, position:'absolute', right:0, zIndex:2, fontSize:'1.2rem'}}>
-				<Icon type={collapsed ? 'menu' : 'close'} style={{color:'rgb(233, 240, 255)'}}/>
-			</Button>	
-			</div>
+	// const sidemenu = (
+	// 	<div className="sidemenu">
 
-			<Sider
-			// width={150}
-			collapsable={true} 
-			collapsedWidth={0}
-			defaultCollapsed={true} 
-			collapsed={collapsed}
-			style={{position:'absolute', right: 0, height:'100vh', transitionDuration: '1s', background:'rgb(16, 15, 62)'}}	
-			>
+	// 		<Sider
+	// 		// width={150}
+	// 		collapsable={true} 
+	// 		collapsedWidth={0}
+	// 		defaultCollapsed={true} 
+	// 		collapsed={collapsed}
+	// 		style={{position:'absolute', right: 0, height:'100vh', transitionDuration: '1s', background:'rgb(16, 15, 62)'}}	
+	// 		>
 
-			<Menu
-			mode="vertical"
-			style={{background: 'rgb(16, 15, 62)', color:'#fff', paddingTop: 30, borderRight:'none', width: '100%'}} >
+	// 		<Menu
+	// 		mode="vertical"
+	// 		style={{background: 'rgb(16, 15, 62)', color:'#fff', paddingTop: 30, borderRight:'none', width: '100%'}} >
 
-				{data.site.siteMetadata.pages.map((page,index) => {
-				return <Menu.Item key={index} style={{
-					position: 'relative',
-					width: '100%',
-					background: 'coral',
-					padding: '0',
-				}}>
-					{/* Hello */}
-					<a href={page.link} style={{
-						textAlign:'right',
-						display: 'block',
-						position: 'absolute',
-						width: '100%',
-						height: '100%',
-						background: "cornflowerblue",
-					}}>{page.title}</a>
-					</Menu.Item>}
-				)}
-			</Menu>
-			</Sider>
-		</div>
-	)
+	// 			{data.site.siteMetadata.pages.map((page,index) => {
+	// 			return <Menu.Item key={index} style={{
+	// 				position: 'relative',
+	// 				width: '100%',
+	// 				background: 'coral',
+	// 				padding: '0',
+	// 			}}>
+	// 				{/* Hello */}
+	// 				<a href={page.link} style={{
+	// 					textAlign:'right',
+	// 					display: 'block',
+	// 					position: 'absolute',
+	// 					width: '100%',
+	// 					height: '100%',
+	// 					background: "cornflowerblue",
+	// 				}}>{page.title}</a>
+	// 				</Menu.Item>}
+	// 			)}
+	// 		</Menu>
+	// 		</Sider>
+	// 	</div>
+	// )
 
 	return (
 		<>
@@ -81,7 +74,28 @@ function TopLayout({ title, children }) {
 
 			<header className="header">
 				<div className='sider'>
-					{sidemenu}
+					<div className='nav-button'>
+						<Button type="link"  
+							onClick={()=>toggleVisible(!visible)} 
+							style={{ marginBottom: 16, zIndex:120, fontSize:'1.2rem'}}>
+								<Icon type={visible ? 'close' : 'menu'} style={{color:'rgb(233, 240, 255)'}}/>
+						</Button>	
+					</div>
+
+					{ console.log(visible)}
+
+					<Menu alignment="right" visible={visible} menuBackground='rgb(16, 15, 62)' width='40vw'> 
+						<MenuItem></MenuItem>
+						<MenuItem justifyContent="flex-end">
+							<Link className='nav-link 'to="/">Home</Link>
+						</MenuItem>
+						<MenuItem justifyContent="flex-end">
+							<Link className='nav-link' to="/about">About</Link>
+						</MenuItem>
+						<MenuItem justifyContent="flex-end">
+							<Link className='nav-link' to="/contact">Contact</Link>
+						</MenuItem>
+					</Menu>
 				</div>
 			</header>
 

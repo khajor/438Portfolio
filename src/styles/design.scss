@@ -7,17 +7,23 @@ $peri2: rgb(64, 96, 229);
 $peri1: rgb(116, 151, 233);
 $light: rgb(233, 240, 255);
 
+// General across all pages
 html,body,#root{
 	height:100%;
 	position: fixed;
 	top:0;left:0;bottom:0;right:0;
 	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
 } 
 html{
 	font-size:16px;
 	font-family: sans-serif;
 }
 
+
+
+//Styles for Layout.js
 body {
 	background: rgb(255, 255, 255);
 }
@@ -31,14 +37,18 @@ body {
 }
 
 .sider{
-	background-color: $peri5;
 	padding-top: 10px;
+	font-size: 1.2rem;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	display:flex;
 	a {
 		color: $light;
 		text-decoration: none;
 
 		&[aria-current='page'] {
-			color: black;
+			color: $peri2;
 		}
 
 		:hover{
@@ -47,28 +57,22 @@ body {
 	}
 }
 
-.sidemenu{
-	position: absolute;
-	right: 0;
+.nav-button{
+position: absolute;
+right: 0;
 }
 
-.intro{
-	background-color: $peri4;
-	height: 100vh;
-}
-
-
-
-.ant-menu-item {
-	padding: 0 !important;
+.nav-link:hover{
+	color: $peri1;
 }
 
 .footer{
-	position: absolute;
+	position: static;
 	bottom: 0;	
 	width: 100%;
 	height: 4rem;
 	display: flex;
+	flex-direction: wrap;
 	justify-content: center;
 	align-items: center;
 	align-items: center;
@@ -77,6 +81,57 @@ body {
 
 	p{
 		margin:0;
-		font-size:1rem;
+		font-size:.8rem;
+		text-align: center;
+	}
+}
+
+
+
+// Styles for Index.js (landing page) (mobile only rn)
+.intro{
+	background-color: $peri4;
+	height: calc(100vh - 3rem);
+
+	.intro-wrap{
+		padding: 1.7rem;
+	}
+}
+
+
+.intro-name{
+	font-size: 2.75rem;
+	color: $light;
+	max-width: 450px;
+	min-width: 320px;
+	span{
+		color: $peri2;
+	}
+}
+
+.feat-pro-grid{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3.2rem 0;
+}
+
+.feat-pro-wrap{
+	min-height: 280px;
+	height: 20rem;
+	width: 80%;
+	min-width: 280px;
+	margin: 3rem;
+
+	.feat-pro{
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+	}
+
+	.pro-title{
+		font-size: 2.5rem;
+		color: $light;
 	}
 }
