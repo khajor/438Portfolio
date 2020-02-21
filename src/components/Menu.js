@@ -48,7 +48,7 @@ const Menu = ({
 	alignment = 'right',
 	transition = '.5s',
 	menuBackground = 'white',
-	visible = true,
+	visible = false,
 	width = '50%',
 	zIndex = 100,
 	children

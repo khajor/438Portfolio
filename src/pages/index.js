@@ -5,19 +5,19 @@ import FeatProject from '../components/FeatProject';
 const featured=[
     {title: 'Market Mate',
 	date:'Winter 2019',
-    sum:'nkqwefnkenkdf fnkwenwelgme',
+    sum:'nkqwefnkenkdf fnkwenwelgme jsut a few words about why wee here ',
 	img:'',
 	bgColor:'rgb(116,233,181)'},
 
     {title: 'Project Two',
 	date:'Sring 2018',
-    sum:'nrkwern qlmwe',
+    sum:'nrkwern qlmwe today is quite sunny ow beautiful I really love it ',
 	img:'',
 	bgColor:'rgb(237, 83, 63)'},
 
 	{title: 'Project 3',
 	date:'2019',
-    sum:'nwfek fnwkkfewkmfw',
+    sum:'nwfek fnwkkfewkmfw and then we went to the beach and touched the stones',
 	img:'',
 	bgColor:'rgb(116,151,233)'}
 ]

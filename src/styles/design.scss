@@ -60,9 +60,13 @@ body {
 .nav-button{
 position: absolute;
 right: 0;
+color:$light;
+	:hover{
+		color:$peri2;
+	}
 }
 
-.nav-link:hover{
+.menu-item:hover{
 	color: $peri1;
 }
 
@@ -128,10 +132,45 @@ right: 0;
 		width: 100%;
 		height: 100%;
 		padding: 1rem;
+		position: relative;
+
+		.bg{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.data-wrap{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display:flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			z-index: 20;
+			padding: 1.2rem;
+			background-color: rgba(0, 0, 0, 0.507);
+		}
+
+		.ant-btn:focus {
+			color: #00000045;
+			background-color: #fff;
+			border-color: #00000045;
+		}
 	}
 
 	.pro-title{
-		font-size: 2.5rem;
-		color: $light;
+		font-size: 2.2rem;
+		color: white;
+		margin-bottom: .5rem;
+	}
+
+	.pro-sum{
+		color: white;
+		font-size: .85rem;
 	}
 }

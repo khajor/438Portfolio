@@ -22,7 +22,7 @@ function TopLayout({ title, children }) {
 	);
 
 
-	const [visible, toggleVisible] = useState(true)
+	const [visible, toggleVisible] = useState(false)
 
 	const {Sider} = Layout
 
@@ -78,7 +78,7 @@ function TopLayout({ title, children }) {
 						<Button type="link"  
 							onClick={()=>toggleVisible(!visible)} 
 							style={{ marginBottom: 16, zIndex:120, fontSize:'1.2rem'}}>
-								<Icon type={visible ? 'close' : 'menu'} style={{color:'rgb(233, 240, 255)'}}/>
+								<Icon type={visible ? 'close' : 'menu'}/>
 						</Button>	
 					</div>
 
