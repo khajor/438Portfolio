@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import FeatProject from '../components/FeatProject';
+import PDrop from '../components/PDrop'
+
 
 const featured=[
     {title: 'Market Mate',
@@ -36,10 +38,8 @@ function HomePage() {
 					<div className="intro-name">
 						<p>I<span>'</span>m Khadijah Jordan and I love to <span>create</span> </p>
 					</div>
-					<div className="intro-img">
-
-					</div>
 				</div>
+				<PDrop/>
 			</div>
 
 			<div className="section feat-pro-grid">

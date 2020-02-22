@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Icon, Button, Layout } from 'antd';
 import {Menu, MenuItem} from './Menu.js';
+import Logo from '../components/Logo'
 
 function TopLayout({ title, children }) {
 	const data = useStaticQuery(
@@ -73,6 +74,9 @@ function TopLayout({ title, children }) {
 			</Helmet>
 
 			<header className="header">
+				<Link  to='/' className='logo-link'>
+					<Logo></Logo>
+				</Link>
 				<div className='sider'>
 					<div className='nav-button'>
 						<Button type="link"  
