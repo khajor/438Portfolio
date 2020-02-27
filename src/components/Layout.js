@@ -91,7 +91,10 @@ function TopLayout({ title, children }) {
 					<Menu alignment="right" visible={visible} menuBackground='rgb(16, 15, 62)' width='40vw'> 
 						<MenuItem></MenuItem>
 						<MenuItem justifyContent="flex-end">
-							<Link className='nav-link 'to="/">Home</Link>
+							<Link className='nav-link 'to="/projects">Projects</Link>
+						</MenuItem>
+						<MenuItem justifyContent="flex-end">
+							<Link className='nav-link 'to="/projects">Artwork</Link>
 						</MenuItem>
 						<MenuItem justifyContent="flex-end">
 							<Link className='nav-link' to="/about">About</Link>

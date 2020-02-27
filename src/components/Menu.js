@@ -44,6 +44,7 @@ MenuItem.propTypes = {
 	justifyContent: PropTypes.string,
 };
 export { MenuItem };
+
 const Menu = ({
 	alignment = 'right',
 	transition = '.5s',

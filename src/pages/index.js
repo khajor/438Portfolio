@@ -9,19 +9,25 @@ const featured=[
 	date:'Winter 2019',
     sum:'nkqwefnkenkdf fnkwenwelgme jsut a few words about why wee here ',
 	img:'',
-	bgColor:'rgb(116,233,181)'},
+	bgColor:'rgb(116,233,181)',
+	url:'/mm'
+	},
 
-    {title: 'Project Two',
+    {title: 'Essence',
 	date:'Sring 2018',
     sum:'nrkwern qlmwe today is quite sunny ow beautiful I really love it ',
 	img:'',
-	bgColor:'rgb(237, 83, 63)'},
+	bgColor:'rgb(116, 151, 233)',
+	url:'/mm'
+	},
 
-	{title: 'Project 3',
+	{title: 'Cashflow',
 	date:'2019',
     sum:'nwfek fnwkkfewkmfw and then we went to the beach and touched the stones',
 	img:'',
-	bgColor:'rgb(116,151,233)'}
+	bgColor:'rgb(60,143,181)',
+	url:'/mm'
+	}
 ]
 
 const featGrid = featured.map((f,i) => (

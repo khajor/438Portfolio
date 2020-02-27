@@ -1,0 +1,24 @@
+.fourbody{
+	height: 100vh;
+	background-color: $peri4;	
+	color: white;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.woops{
+	color:white;
+}
+
+.pic{
+	align-self: center;
+	display: flex;
+	width:100%;
+	PDrop {
+		align-self: center;
+		svg{
+			width:200%;
+		}
+	}
+}

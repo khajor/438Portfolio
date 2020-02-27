@@ -14,6 +14,7 @@ html,body,#root{
 	margin: 0;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	font-family: Lato;
 } 
 html{
 	font-size:16px;
@@ -36,15 +37,15 @@ body {
 }
 
 .logo-link{
-	justify-self: flex-start;
-	align-self: center;
+	justify-self: center;
 	margin-left: 15px;
+	margin-top: 4px;
 	cursor: pointer;
 }
 
 .logo{
-	width:2.6rem;
-	height:2.6rem;
+	width:2.4rem;
+	height:2.4rem;
 }
 
 .sider{
