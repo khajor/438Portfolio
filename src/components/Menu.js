@@ -63,7 +63,6 @@ const Menu = ({
 	// 	setVisibility(false);
 	// };
 
-	console.log(visibility)
 	const styles = {
 		backgroundColor: menuBackground,
 		boxShadow: visibility

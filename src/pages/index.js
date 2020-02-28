@@ -41,8 +41,8 @@ function HomePage() {
 		<Layout title="Home page">
 			<div className="section intro">
 				<div className="intro-wrap">
-					<div className="intro-name">
-						<p>I<span>'</span>m Khadijah Jordan and I love to <span>create</span> </p>
+					<div>
+						<h2 className="intro-name">I<span>'</span>m Khadijah Jordan and I love to <span>create</span> </h2>
 					</div>
 				</div>
 				<PDrop/>

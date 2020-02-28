@@ -1,0 +1,72 @@
+//defualt css values for basic eleements
+
+//conditioninig basic settings, layouts and positions
+html,body,#root{
+	height:100%;
+	position: fixed;
+	top:0;left:0;bottom:0;right:0;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+} 
+
+html{
+	font-family: Lato, sans-serif;
+	color: black;
+	font-size:16px;
+
+	@include breakpoint(sm) {
+		font-size: 16px;
+		}
+
+	@include breakpoint(md) {
+		font-size: 16.6px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 17.3px;
+	}
+
+	@include breakpoint(xl) {
+	font-size: 18px;
+	}
+}
+
+
+body {
+	background: rgb(255, 255, 255);
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 4.8rem;
+	color: black;
+	font-weight: 400;
+}
+
+h2{
+	font-size: 3.55rem;
+	color: black;
+	font-weight: 400;
+}
+
+h3{
+	font-size: 1.55rem;
+	color: black;
+	font-weight: 400;
+}
+
+h4{
+	font-size: 1.1rem;
+	color: black;
+	font-weight: 400;
+}
+
+h5{
+	font-size: 1rem;
+	color: black;
+	font-weight: 400;
+}

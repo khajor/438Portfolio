@@ -1,6 +1,4 @@
 import React from 'react'
-import {Button} from 'antd'
-//import { getInputClassName } from 'antd/lib/input/Input';
 import Reveal from 'react-reveal/Reveal'
 import {Link} from 'gatsby'
 

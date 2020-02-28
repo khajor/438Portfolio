@@ -86,9 +86,7 @@ function TopLayout({ title, children }) {
 						</Button>	
 					</div>
 
-					{ console.log(visible)}
-
-					<Menu alignment="right" visible={visible} menuBackground='rgb(16, 15, 62)' width='40vw'> 
+					<Menu alignment="right" visible={visible} menuBackground='rgb(16, 15, 62)' width='275px'> 
 						<MenuItem></MenuItem>
 						<MenuItem justifyContent="flex-end">
 							<Link className='nav-link 'to="/projects">Projects</Link>

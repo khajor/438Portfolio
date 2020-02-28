@@ -1,33 +1,7 @@
-$dark: rgb(14, 20, 24);
-$peri5: rgb(16, 15, 62); 
-$peri4: rgb(25, 28, 88);
-$peri3: rgb(75, 97, 188);
-$peri2: rgb(64, 96, 229);
-$peri1: rgb(116, 151, 233);
-$light: rgb(233, 240, 255);
-
 // General across all pages
-html,body,#root{
-	height:100%;
-	position: fixed;
-	top:0;left:0;bottom:0;right:0;
-	margin: 0;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	font-family: Lato;
-} 
-html{
-	font-size:16px;
-	font-family: sans-serif;
-}
-
 
 
 //Styles for Layout.js
-body {
-	background: rgb(255, 255, 255);
-}
-
 .header{
 	background-color: $peri5;
 	height: 3rem;

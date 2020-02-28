@@ -1,0 +1,25 @@
+ //Breakpoints 
+
+ $width-xs: 0px; //phone
+ $width-sm: 644px; //sideways phone
+ $width-md: 768px; //tablet
+ $width-lg: 1012px; //tablet2
+ $width-xl: 1280px; //desktop 
+
+$breakpoints: (
+	sm: $width-sm,
+	md: $width-md,
+	lg: $width-lg, 
+	xl: $width-xl,
+);
+
+@mixin breakpoint($breakpoint) {
+	$width: map-get($breakpoints, $breakpoint);
+	@media (min-width: $width) {
+		@content;
+	}
+}
+
+// how to use:
+// @iclude breakpoint({size}) { css rules }
+// put the largest size at the top and smallest at the bottom for hierarchy 
