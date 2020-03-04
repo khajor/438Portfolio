@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 function HomePage() {
 	return (
 		<Layout title="About page">
-			<p>This is the about page.</p>
+			<div className="top"></div>
 		</Layout>
 	);
 }

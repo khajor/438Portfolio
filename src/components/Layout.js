@@ -6,7 +6,7 @@ import { Icon, Button, Layout } from 'antd';
 import {Menu, MenuItem} from './Menu.js';
 import Logo from '../components/Logo'
 
-function TopLayout({ title, children }) {
+function TopLayout({title, children }) {
 	const data = useStaticQuery(
 		graphql`
 			query {
@@ -22,49 +22,7 @@ function TopLayout({ title, children }) {
 		`
 	);
 
-
 	const [visible, toggleVisible] = useState(false)
-
-	const {Sider} = Layout
-
-	// const sidemenu = (
-	// 	<div className="sidemenu">
-
-	// 		<Sider
-	// 		// width={150}
-	// 		collapsable={true} 
-	// 		collapsedWidth={0}
-	// 		defaultCollapsed={true} 
-	// 		collapsed={collapsed}
-	// 		style={{position:'absolute', right: 0, height:'100vh', transitionDuration: '1s', background:'rgb(16, 15, 62)'}}	
-	// 		>
-
-	// 		<Menu
-	// 		mode="vertical"
-	// 		style={{background: 'rgb(16, 15, 62)', color:'#fff', paddingTop: 30, borderRight:'none', width: '100%'}} >
-
-	// 			{data.site.siteMetadata.pages.map((page,index) => {
-	// 			return <Menu.Item key={index} style={{
-	// 				position: 'relative',
-	// 				width: '100%',
-	// 				background: 'coral',
-	// 				padding: '0',
-	// 			}}>
-	// 				{/* Hello */}
-	// 				<a href={page.link} style={{
-	// 					textAlign:'right',
-	// 					display: 'block',
-	// 					position: 'absolute',
-	// 					width: '100%',
-	// 					height: '100%',
-	// 					background: "cornflowerblue",
-	// 				}}>{page.title}</a>
-	// 				</Menu.Item>}
-	// 			)}
-	// 		</Menu>
-	// 		</Sider>
-	// 	</div>
-	// )
 
 	return (
 		<>
@@ -74,7 +32,7 @@ function TopLayout({ title, children }) {
 			</Helmet>
 
 			<header className="header">
-				<Link  to='/' className='logo-link'>
+				<Link to="/" className="logo-link">
 					<Logo></Logo>
 				</Link>
 				<div className='sider'>
