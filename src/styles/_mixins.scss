@@ -1,10 +1,10 @@
  //Breakpoints 
 
  $width-xs: 0px; //phone
- $width-sm: 644px; //sideways phone
- $width-md: 768px; //tablet
- $width-lg: 1012px; //tablet2
- $width-xl: 1280px; //desktop 
+ $width-sm: 644px; //tablet sm 
+ $width-md: 768px; //tablet lg
+ $width-lg: 1012px; //desktop sm
+ $width-xl: 1280px; //desktop md
 
 $breakpoints: (
 	sm: $width-sm,

@@ -15,6 +15,8 @@
         "gatsby-plugin-google-fonts": "^1.0.1",
         "gatsby-plugin-react-helmet": "^3.1.22",
         "gatsby-plugin-sass": "^2.1.28",
+        "gatsby-plugin-transition-link": "^1.17.8",
+        "gsap": "^3.2.4",
         "node-sass": "^4.13.1",
         "react": "^16.12.0",
         "react-animate-on-scroll": "^2.1.5",

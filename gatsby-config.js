@@ -14,6 +14,7 @@ module.exports = {
     plugins: [
         'gatsby-plugin-sass',
 		'gatsby-plugin-react-helmet',
+		`gatsby-plugin-transition-link`,
 		
 		{
 			resolve: `gatsby-plugin-google-fonts`,

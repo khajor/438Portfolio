@@ -2,3 +2,29 @@
 	height:100vh;
 	background-color: $peri4;
 }
+
+.IPXlrfLM_0{
+	stroke-dasharray:625 627;
+	stroke-dashoffset:626;
+	animation:IPXlrfLM_draw 1500ms ease-out 0ms forwards;
+}
+
+.IPXlrfLM_1{
+	stroke-dasharray:625 627;
+	stroke-dashoffset:626;
+	animation:IPXlrfLM_draw 1500ms ease-out 250ms forwards;
+}
+
+.IPXlrfLM_2{
+	stroke-dasharray:625 627;
+	stroke-dashoffset:626;
+	animation:IPXlrfLM_draw 1500ms ease-out 500ms forwards;
+}
+
+@keyframes IPXlrfLM_draw{
+	100%{stroke-dashoffset:0;}
+}
+	
+@keyframes IPXlrfLM_fade{
+	0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}
+}
