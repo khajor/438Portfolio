@@ -3,7 +3,7 @@ import {Button} from 'antd'
 
 function DataBox ({dbbg, role, context, tools, duration, dbData}) {
 	return <div>
-		<div className='databox' style={{backgroundColor: dbbg, padding:'1rem'}}>
+		<div className='databox' style={{backgroundColor: dbbg, padding:'1rem', width:'500px', margin:'1rem'}}>
 			<div>
 				<p className='data-title'>ROLE</p>
 				<p>{role}</p>
@@ -28,7 +28,7 @@ export {DataBox}
 
 function ProjectIntro({bg, title, tagline, tcolor, link, sum}){
 	return <div className='intro-wrap'> 
-		<div style={{height:'29rem'}}> 
+		<div style={{height:'40rem'}}> 
 			<div style={{height:'42%', backgroundColor:bg}}>
 			</div>
 			<div style={{padding:'1rem'}}>

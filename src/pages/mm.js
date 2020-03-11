@@ -15,9 +15,11 @@ const mmData = {
 function MarketMate() {
 	return (
 	<Layout>
-		<ProjectIntro bg={mmData.bg} link={mmData.link} title={mmData.title} tagline={mmData.tagline} sum={mmData.sum}>
-		</ProjectIntro>
-		<DataBox dbbg={mmData.dbbg} role='designer' context='course project' tools='Figma, Adobe Illustrator' duration='10 weeks'/>
+		<div className="mm-wrap">
+			<ProjectIntro bg={mmData.bg} link={mmData.link} title={mmData.title} tagline={mmData.tagline} sum={mmData.sum}>
+			</ProjectIntro>
+			<DataBox dbbg={mmData.dbbg} role='designer' context='course project' tools='Figma, Adobe Illustrator' duration='10 weeks'/>
+		</div>
 	</Layout>
 )}
 
