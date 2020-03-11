@@ -2,10 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import { Icon, Button, Layout } from 'antd';
+import { Icon, Button } from 'antd';
 import { Menu, MenuItem } from './Menu.js';
 import Logo from '../components/Logo';
-import TransitionLink from 'gatsby-plugin-transition-link';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 function TopLayout({ title, children }) {
@@ -34,53 +33,98 @@ function TopLayout({ title, children }) {
 			</Helmet>
 
 			<header className="header">
-				<Link to="/" className="logo-link">
-					<Logo></Logo>
-				</Link>
-				<div className="sider">
-					<div className="nav-button">
-						<Button
-							type="link"
-							onClick={() => toggleVisible(!visible)}
-							style={{ marginBottom: 16, zIndex: 120, fontSize: '1.2rem' }}
-						>
-							<Icon type={visible ? 'close' : 'menu'} />
-						</Button>
-					</div>
-
-					<Menu
-						alignment="right"
-						visible={visible}
-						menuBackground="#081538"
-						width="275px"
+				<div className="nav-wrap">
+					<AniLink
+						cover
+						bg="#081538"
+						direction="up"
+						to="/"
+						deuration={1.3}
+						className="logo-link"
 					>
-						<MenuItem></MenuItem>
-						<MenuItem justifyContent="flex-end">
-							<Link className="nav-link " to="/projects">
-								Projects
-							</Link>
-						</MenuItem>
-						<MenuItem justifyContent="flex-end">
-							<Link className="nav-link " to="/projects">
-								Artwork
-							</Link>
-						</MenuItem>
-						<MenuItem justifyContent="flex-end">
-							<Link className="nav-link" to="/about">
-								About
-							</Link>
-						</MenuItem>
-						<MenuItem justifyContent="flex-end">
-							<Link className="nav-link" to="/contact">
-								Contact
-							</Link>
-						</MenuItem>
-						<MenuItem justifyContent="flex-end">
-							<AniLink fade to="/about" duration={1}>
-								About With Transition
-							</AniLink>
-						</MenuItem>
-					</Menu>
+						<Logo></Logo>
+					</AniLink>
+
+					<div className="nav">
+						<AniLink 
+							cover
+							direction="down"
+							bg="#081538"
+							to="/about"
+							duration={1.3}
+							className="navlink">Projects</AniLink>
+
+						<AniLink 
+							cover
+							direction="down"
+							bg="#081538"
+							to="/about"
+							duration={1.3}
+							className="navlink">Artwork</AniLink>
+
+						<AniLink 
+							cover
+							direction="down"
+							bg="#081538"
+							to="/about"
+							duration={1.3}
+							className="navlink">About</AniLink>
+
+						<AniLink 
+							cover
+							direction="down"
+							bg="#081538"
+							to="/about"
+							duration={1.3}
+							className="navlink">Contact</AniLink>							
+					</div>
+					<div className="sider">
+						<div className="nav-button">
+							<Button
+								type="link"
+								onClick={() => toggleVisible(!visible)}
+								style={{ marginBottom: 16, zIndex: 120, fontSize: '1.2rem' }}
+							>
+								<Icon type={visible ? 'close' : 'menu'} />
+							</Button>
+						</div>
+
+						<Menu
+							alignment="right"
+							visible={visible}
+							menuBackground="#081538"
+							width="275px"
+						>
+							<MenuItem></MenuItem>
+							<MenuItem justifyContent="flex-end">
+								<Link className="nav-link " to="/projects">
+									Projects
+								</Link>
+							</MenuItem>
+							<MenuItem justifyContent="flex-end">
+								<Link className="nav-link " to="/projects">
+									Artwork
+								</Link>
+							</MenuItem>
+							<MenuItem justifyContent="flex-end">
+								<AniLink
+									cover
+									direction="down"
+									bg="#081538"
+									to="/about"
+									duration={1.3}
+									className="nav-link"
+								>
+									About
+								</AniLink>
+							</MenuItem>
+							<MenuItem justifyContent="flex-end">
+								<Link className="nav-link" to="/contact">
+									Contact
+								</Link>
+							</MenuItem>
+						</Menu>
+					</div>
 				</div>
 			</header>
 

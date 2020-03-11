@@ -1,6 +1,20 @@
 .top{
 	height:100vh;
-	background-color: $peri4;
+	background-color: $peri5;
+}
+
+.about-intro{
+	height:calc(100vh - 3rem);
+	background-color: $peri5;
+	display:flex;
+	padding:5rem;
+}
+
+.wave{
+	width:400px;
+	height:175px;
+	padding-left:2rem;
+	padding-top: 2rem;
 }
 
 .IPXlrfLM_0{

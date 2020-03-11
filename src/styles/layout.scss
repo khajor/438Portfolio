@@ -2,17 +2,29 @@
 
 
 //Styles for Layout.js
+
 .header{
-	background-color: $peri5;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	background-color: $dark;
 	height: 3rem;
+	padding:0 3rem;
+}
+
+.nav-wrap{
 	display:flex;
 	flex-direction: row;
-	width:100%;
+	justify-content: space-between;
+	width:80vw;
+
+	@include breakpoint(sm){
+		align-items: center;
+	}
 }
 
 .logo-link{
 	justify-self: center;
-	margin-left: 15px;
 	margin-top: 4px;
 	cursor: pointer;
 }
@@ -22,12 +34,32 @@
 	height:2.4rem;
 }
 
+.nav{
+	display: none;
+	@include breakpoint(sm){
+		display:flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.navlink{
+		font-size: 1rem;
+		color:white;
+		padding-left: 2.5rem;
+
+		:hover{
+			color:$peri2;
+		}
+	}
+}
+
 .sider{
 	padding-top: 10px;
 	font-size: 1.2rem;
-	width: 50%;
-	position: absolute;
-	right: 0;
+	// width: 50%;
+	// position: absolute;
+	// right: 0;
 	display:flex;
 	a {
 		color: $light;
@@ -41,11 +73,18 @@
 			color: $peri2
 		}
 	}
+
+	@include breakpoint(sm){
+	display: none;
+	}
 }
 
 .nav-button{
-position: absolute;
-right: 0;
+// position: absolute;
+// right: 0;
+	.ant-btn{
+		padding-right: 0;
+	}
 	.ant-btn-link{
 		color:$light;
 		:focus{
@@ -55,7 +94,7 @@ right: 0;
 }
 
 .menu-item:hover{
-	color: $peri1;
+	color: $peri2;
 }
 
 .footer{
@@ -68,7 +107,7 @@ right: 0;
 	justify-content: center;
 	align-items: center;
 	align-items: center;
-	background-color: $peri5;
+	background-color: $dark;
 	color: $light;
 
 	p{

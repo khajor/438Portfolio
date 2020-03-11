@@ -7,25 +7,25 @@ import PDrop from '../components/PDrop'
 const featured=[
     {title: 'Market Mate',
 	date:'Winter 2019',
-    sum:'nkqwefnkenkdf fnkwenwelgme jsut a few words about why wee here ',
+    sum:'Lorem ipsum filler lorem ipsum d solor fill text about a project fill summary',
 	img:'',
-	bgColor:'rgb(116,233,181)',
+	bgColor:'#74e9b5',
 	url:'/mm'
 	},
 
     {title: 'Essence',
 	date:'Sring 2018',
-    sum:'nrkwern qlmwe today is quite sunny ow beautiful I really love it ',
+    sum:'Lorem ipsum filler lorem solor fill text about a project fill sum dolor Lor Lor Loreming',
 	img:'',
-	bgColor:'rgb(116, 151, 233)',
+	bgColor:'#7497e9',
 	url:'/mm'
 	},
 
 	{title: 'Cashflow',
 	date:'2019',
-    sum:'nwfek fnwkkfewkmfw and then we went to the beach and touched the stones',
+    sum:'Lor lor emipsum. Dolor filler text project fill IpLoreem ipsum abouto a project at some point',
 	img:'',
-	bgColor:'rgb(60,143,181)',
+	bgColor:'#3c8fb5',
 	url:'/mm'
 	}
 ]
@@ -42,7 +42,7 @@ function HomePage() {
 			<div className="section intro">
 				<div className="intro-wrap">
 					<div>
-						<h2 className="intro-name">I<span>'</span>m Khadijah Jordan and I love to <span>create</span> </h2>
+						<h2 className="intro-name">I'm Khadijah Jordan and I love to <span>create</span> </h2>
 					</div>
 				</div>
 				<PDrop/>

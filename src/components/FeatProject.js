@@ -1,32 +1,50 @@
-import React from 'react'
-import Reveal from 'react-reveal/Reveal'
-import {Link} from 'gatsby'
+import React from 'react';
+import Reveal from 'react-reveal/Reveal';
+import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-
-const DataWrap = ({ title, sum, date, url}) => (
+const DataWrap = ({ title, sum, date, url, bgColor }) => (
 	<div className="data-wrap">
 		<div className="textbox">
 			<p className="pro-title">{title}</p>
-			<p className="pro-datesum">{date}<br></br>{sum}</p>
+			<p className="pro-datesum">
+				{date}
+				<br></br>
+				{sum}
+			</p>
 		</div>
 
-		<Link style={{alignSelf:'flex-start', fontSize:'.75rem', color:'white'}} to={url}>
+		<AniLink
+			cover
+			direction="left"
+			bg={bgColor}
+			to={url}
+			duration={1.3}
+			className="nav-link"
+		>
 			Read More
-		</Link>
-
+		</AniLink>
 	</div>
 );
 
 function FeatProject(props) {
 	return (
-	<div class="feat-pro">
-		<div style={{background: props.img ? props.img : props.bgColor}} className='bg'>	
+		<div className="feat-pro">
+			<div
+				style={{ background: props.img ? props.img : props.bgColor }}
+				className="bg"
+			></div>
+			<Reveal effect="fadeIn" effectOut="fadeOut">
+				<DataWrap
+					title={props.title}
+					date={props.date}
+					sum={props.sum}
+					url={props.url}
+					bgColor={props.bgColor}
+				/>
+			</Reveal>
 		</div>
-		<Reveal effect="fadeIn" effectOut="fadeOut">
-			<DataWrap title={props.title}  date={props.date} sum={props.sum} url={props.url}/>
-		</Reveal>
+	);
+}
 
-	</div>
-);}
-
-export default FeatProject
+export default FeatProject;

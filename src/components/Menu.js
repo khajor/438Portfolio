@@ -31,6 +31,7 @@ const MenuItem = ({
 				display: 'flex',
 				justifyContent: validatedProps.justifyContent,
 				padding: '1em',
+				paddingRight: '3rem',
 			}}
 		>
 			{children}

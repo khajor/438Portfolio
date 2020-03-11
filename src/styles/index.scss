@@ -5,9 +5,13 @@
 	background-color: $peri5;
 	height: calc(90vh - 3rem);
 	position: relative;
+	display: flex;
+	justify-content: center;
 
 	.intro-wrap{
-		padding: 1.7rem;
+		width: 80vw;
+		margin: 0 3rem;
+		padding: 2rem 0;
 	}
 }
 
@@ -19,10 +23,20 @@
 		color: $peri2;
 	}	
 	
-	max-width: 450px;
-	min-width: 320px;
+	width: 320px;
+
+
+	@include breakpoint(sm){
+		width: 415px;
+	}
+
+	@include breakpoint(md){
+		width: 500px;
+		font-size:3.3rem;
+	}
 
 	@include breakpoint(lg){
+		width: 750px;
 		font-size: 4rem;
 	}
 }
@@ -31,7 +45,7 @@
 	position: absolute;
 	bottom:-40px;
 	width: 100%;
-	max-height: 200px;
+	max-height: 30vh;
 }
 
 .feat-pro-grid{
@@ -43,48 +57,39 @@
 }
 
 .feat-pro-wrap{
-	min-height: 280px;
 	height: 20rem;
+	min-height: 280px;
 	width: 80%;
 	min-width: 280px;
+	max-width: 1015px;
 	margin: 3rem;
 
-	.feat-pro{
+	@include breakpoint(md){
+		height: 25rem;
+	}
+}
+
+.feat-pro{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.react-reveal {
+		height: 100%;
+	}
+
+	.bg{
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
-		position: relative;
-
-		.react-reveal {
-			height: 100%;
-		}
-
-		.bg{
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-
-		
-
-		.ant-btn:focus {
-			color: #00000045;
-			background-color: #fff;
-			border-color: #00000045;
-		}
 	}
 
-	.pro-title{
-		font-size: 2.2rem;
-		color: white;
-		margin-bottom: .8rem;
-	}
-
-	.pro-datesum{
-		color: white;
-		font-size: 1rem;
-		font-weight: 300;
+	.ant-btn:focus {
+		color: #00000045;
+		background-color: #fff;
+		border-color: #00000045;
 	}
 }
 
@@ -94,9 +99,50 @@
 	height: 100%;
 	display:flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: flex-end;
+	// align-items: flex-end;
 	z-index: 20;
-	padding: 1.2rem;
+	padding: 2rem;
 	background-color: rgba(0, 0, 0, 0.507);
 	color: white;
+
+	@include breakpoint(sm){
+		padding: 2.2rem;
+	}
+}
+
+.pro-title{
+	font-size: 2.2rem;
+	color: white;
+	margin-bottom: .8rem;
+	font-weight: 400;
+
+	@include breakpoint(md){
+		font-size: 3.5rem;
+	}
+}
+
+.pro-datesum{
+	color: white;
+	font-size: 1rem;
+	font-weight: 300;
+	max-width: 85%;
+
+	@include breakpoint(md){
+		font-size: 1.2rem;
+		max-width:65%
+	}
+}
+
+.nav-link{
+	align-self: flex-start;
+	color: white;
+	font-size: 1rem;
+	@include breakpoint(md){
+		font-size: 1.2rem;
+	}
+
+	:hover{
+		color:$peri2;
+	}
 }
