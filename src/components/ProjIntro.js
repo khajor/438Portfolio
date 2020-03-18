@@ -1,50 +1,63 @@
-import React from 'react'
-import {Button} from 'antd'
+import React from 'react';
+import { Button } from 'antd';
 
-function DataBox ({dbbg, role, context, tools, duration, dbData}) {
-	return <div>
-		<div className='databox' style={{backgroundColor: dbbg, padding:'1rem', width:'500px', margin:'1rem'}}>
-			<div>
-				<p className='data-title'>ROLE</p>
+function DataBox({ dbbg, role, context, tools, duration, dbData }) {
+	return (
+		<div
+			className="databox"
+			style={{
+				backgroundColor: dbbg,
+			}}
+		>
+			<div className="db-section">
+				<p className="data-title">ROLE</p>
 				<p>{role}</p>
 			</div>
-			<div>
-				<p className='data-title'>CONTEXT</p>
+			<div className="db-section">
+				<p className="data-title">CONTEXT</p>
 				<p>{context}</p>
 			</div>
-			<div>
-				<p className='data-title'>TOOLS</p>
+			<div className="db-section">
+				<p className="data-title">TOOLS</p>
 				<p>{tools}</p>
 			</div>
-			<div>
-				<p className='data-title'>DURATION</p>
+			<div className="db-section">
+				<p className="data-title">DURATION</p>
 				<p>{duration}</p>
 			</div>
 		</div>
-	</div>
+	);
 }
+export { DataBox };
 
-export {DataBox}
-
-function ProjectIntro({bg, title, tagline, tcolor, link, sum}){
-	return <div className='intro-wrap'> 
-		<div style={{height:'40rem'}}> 
-			<div style={{height:'42%', backgroundColor:bg}}>
+function OverviewBox({ link, sum }) {
+	return (
+		<div className="overviewbox">
+			<p style={{ fontWeight: '700' }}>OVERVIEW</p>
+			<h5>{sum}</h5>
+			<div style={{ padding: '1rem', paddingLeft: '0rem' }}>
+				<Button href={link}>View Website -></Button>
 			</div>
-			<div style={{padding:'1rem'}}>
-				<h2 style={{color:tcolor, marginBottom:'.2rem'}}>{title}</h2>
+		</div>
+	);
+}
+export { OverviewBox };
+
+function ProjectIntro({ bg, title, tagline, tcolor }) {
+	return (
+		<div className="projin-wrap">
+			<div className="projin-head" style={{ backgroundColor: bg }}>
+				<div className="projin-head-text">
+					<h2 style={{ color: tcolor}}>{title}</h2>
+					<h3>{tagline}</h3>
+				</div>
+				<img src="abc.com" alt="market mate ipad mockups"></img>
+			</div>
+			<div className="projin-head-text-m">
+				<h2 style={{marginBottom: '.2rem' }}>{title}</h2>
 				<h3>{tagline}</h3>
 			</div>
 		</div>
-
-		<div style={{padding:'1rem'}}>
-			<p style={{fontWeight:'700'}}>OVERVIEW</p>
-			<h4>{sum}</h4>
-			<div style={{padding:'1rem', paddingLeft:'0rem'}}>
-				<Button href={link}>View Website -></Button>	
-			</div>
-		</div>
-	</div>
+	);
 }
-
-export {ProjectIntro}
+export { ProjectIntro };

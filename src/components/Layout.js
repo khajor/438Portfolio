@@ -52,7 +52,7 @@ function TopLayout({ title, children }) {
 							bg="#081538"
 							to="/about"
 							duration={1.3}
-							className="navlink">Projects</AniLink>
+							className="navlink">PROJECTS</AniLink>
 
 						<AniLink 
 							cover
@@ -60,7 +60,7 @@ function TopLayout({ title, children }) {
 							bg="#081538"
 							to="/about"
 							duration={1.3}
-							className="navlink">Artwork</AniLink>
+							className="navlink">ARTWORK</AniLink>
 
 						<AniLink 
 							cover
@@ -68,15 +68,8 @@ function TopLayout({ title, children }) {
 							bg="#081538"
 							to="/about"
 							duration={1.3}
-							className="navlink">About</AniLink>
+							className="navlink">ABOUT</AniLink>
 
-						<AniLink 
-							cover
-							direction="down"
-							bg="#081538"
-							to="/about"
-							duration={1.3}
-							className="navlink">Contact</AniLink>							
 					</div>
 					<div className="sider">
 						<div className="nav-button">
@@ -98,12 +91,12 @@ function TopLayout({ title, children }) {
 							<MenuItem></MenuItem>
 							<MenuItem justifyContent="flex-end">
 								<Link className="nav-link " to="/projects">
-									Projects
+									PROJECTS
 								</Link>
 							</MenuItem>
 							<MenuItem justifyContent="flex-end">
 								<Link className="nav-link " to="/projects">
-									Artwork
+									ARTWORK
 								</Link>
 							</MenuItem>
 							<MenuItem justifyContent="flex-end">
@@ -115,13 +108,8 @@ function TopLayout({ title, children }) {
 									duration={1.3}
 									className="nav-link"
 								>
-									About
+									ABOUT
 								</AniLink>
-							</MenuItem>
-							<MenuItem justifyContent="flex-end">
-								<Link className="nav-link" to="/contact">
-									Contact
-								</Link>
 							</MenuItem>
 						</Menu>
 					</div>
