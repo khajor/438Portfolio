@@ -56,7 +56,7 @@ body{
 	}
 }
 
-.mm-wrap{
+.es-wrap{
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -143,79 +143,16 @@ body{
 	}
 }
 
-.mm-sec{
+.es-sec{
 	span{
 		font-weight: 700;
-		color:#2CAB7D;
+		color:#7176F1;
+	}
+		h1{
+		color: #7176F1;
 	}
 }
 
-.mmsec2{
-	background-color: #E9F8DD;
-}
-
-.mmsec3{
-background-color: #2CAB7D;
-
-@include breakpoint(sm){
-	h1{
-		font-size: 4rem;
-	}
-}
-
-h1{
-	color:rgba(0, 0, 0, 0.658);
-}
-h3{
-	min-height: 2.2rem;
-	color: white;
-	text-align: center;	
-
-	line-height: 110%;
-	font-size: 1.3rem;	
-}
-p{
-	margin-top: 3.8rem;
-	color: white;
-}
-}
-
-.prcs-time{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	@include breakpoint(md){
-		flex-direction: row;
-		margin-top:5rem;
-		justify-content: space-evenly;
-		height: 60%;
-		flex-wrap: wrap;
-	}
-	@include breakpoint(lg){
-		justify-content: space-between;
-		flex-wrap: nowrap;
-	}
-}
-
-.prcs-time-card{
-	margin: 0 1.9rem 3rem 0;
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 75%;
-	p{
-		margin-top: 1rem;
-	}
-
-	@include breakpoint(md){
-		width: 28%
-
-	}
-}
-
-.prcs-time-card-bar{
-	height: 3px;
-	width: 30%;
-	background-color: #E9F8DD;
+.essec2{
+	background-color: #DBF6FF;
 }

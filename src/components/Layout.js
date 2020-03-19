@@ -50,7 +50,7 @@ function TopLayout({ title, children }) {
 							cover
 							direction="down"
 							bg="#081538"
-							to="/about"
+							to="/"
 							duration={1.3}
 							className="navlink">PROJECTS</AniLink>
 
@@ -58,7 +58,7 @@ function TopLayout({ title, children }) {
 							cover
 							direction="down"
 							bg="#081538"
-							to="/about"
+							to="/contact"
 							duration={1.3}
 							className="navlink">ARTWORK</AniLink>
 

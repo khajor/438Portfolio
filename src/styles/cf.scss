@@ -56,7 +56,7 @@ body{
 	}
 }
 
-.mm-wrap{
+.cf-wrap{
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -143,19 +143,20 @@ body{
 	}
 }
 
-.mm-sec{
+.cf-sec{
 	span{
 		font-weight: 700;
-		color:#2CAB7D;
+		color:#71B294;
 	}
+
 }
 
-.mmsec2{
-	background-color: #E9F8DD;
+.cfsec2{
+	background-color: #DAF6EA;
 }
 
-.mmsec3{
-background-color: #2CAB7D;
+.cfsec3{
+background-color: #154E5E;
 
 @include breakpoint(sm){
 	h1{
@@ -217,5 +218,5 @@ p{
 .prcs-time-card-bar{
 	height: 3px;
 	width: 30%;
-	background-color: #E9F8DD;
+	background-color: #C5E3EA;
 }

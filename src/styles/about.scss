@@ -3,42 +3,87 @@
 	background-color: $peri5;
 }
 
-.about-intro{
-	height:calc(100vh - 3rem);
+.about-page-wrap{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-sec{
+	width:100%;
+	min-height: 100vh;
 	background-color: $peri5;
 	display:flex;
-	padding:5rem;
+	@include breakpoint(lg){
+			padding:5rem;
+			padding-top:0rem;
+	}
+
 }
 
-.wave{
-	width:400px;
-	height:175px;
-	padding-left:2rem;
-	padding-top: 2rem;
+.about-intro{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	max-width: 1015px;
+	padding: 3rem;
+
+	@include breakpoint(lg){
+		width: 80vw;
+		min-height: 130vh;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2rem;
+		// padding-bottom: 5rem;
+	}	
 }
 
-.IPXlrfLM_0{
-	stroke-dasharray:625 627;
-	stroke-dashoffset:626;
-	animation:IPXlrfLM_draw 1500ms ease-out 0ms forwards;
+.about-image{
+	width: 100%;
+	grid-column: 1/2;
 }
 
-.IPXlrfLM_1{
-	stroke-dasharray:625 627;
-	stroke-dashoffset:626;
-	animation:IPXlrfLM_draw 1500ms ease-out 250ms forwards;
+.abt-intro-txt{
+
+	display: flex;
+	flex-direction: column;
+
+	h2{
+		font-size: 2.8rem;
+		margin-top:3rem;
+		margin-bottom: 3rem;
+	}
+
+	h3{
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: $light;
+	}
+
+	@include breakpoint(lg){
+		margin-left: 3rem;
+		grid-column-start: 2;
+		grid-column-end: 4;	
+
+		h2{
+			margin-bottom: 7rem;
+			font-size: 3.6rem;
+		}
+	}
 }
 
-.IPXlrfLM_2{
-	stroke-dasharray:625 627;
-	stroke-dashoffset:626;
-	animation:IPXlrfLM_draw 1500ms ease-out 500ms forwards;
+.about-name{
+	width: 100%;
 }
 
-@keyframes IPXlrfLM_draw{
-	100%{stroke-dashoffset:0;}
+.aboutdraw{
+	width:100%;
+	margin-top: 7rem;
 }
-	
-@keyframes IPXlrfLM_fade{
-	0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}
-}
+
+.st0{fill:none;stroke:$peri2;;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st1{fill:none;stroke:$peri2;stroke-width:7;stroke-miterlimit:10;}
+
+.TLjNlMPO_0{stroke-dasharray:924 926;stroke-dashoffset:925;animation:TLjNlMPO_draw 4000ms ease-out 0ms forwards;}.TLjNlMPO_1{stroke-dasharray:59 61;stroke-dashoffset:60;animation:TLjNlMPO_draw 4000ms ease-out 6ms forwards;}.TLjNlMPO_2{stroke-dasharray:1089 1091;stroke-dashoffset:1090;animation:TLjNlMPO_draw 4000ms ease-out 13ms forwards;}.TLjNlMPO_3{stroke-dasharray:536 538;stroke-dashoffset:537;animation:TLjNlMPO_draw 4000ms ease-out 20ms forwards;}.TLjNlMPO_4{stroke-dasharray:387 389;stroke-dashoffset:388;animation:TLjNlMPO_draw 4000ms ease-out 27ms forwards;}.TLjNlMPO_5{stroke-dasharray:554 556;stroke-dashoffset:555;animation:TLjNlMPO_draw 4000ms ease-out 34ms forwards;}.TLjNlMPO_6{stroke-dasharray:731 733;stroke-dashoffset:732;animation:TLjNlMPO_draw 4000ms ease-out 40ms forwards;}.TLjNlMPO_7{stroke-dasharray:418 420;stroke-dashoffset:419;animation:TLjNlMPO_draw 4000ms ease-out 47ms forwards;}.TLjNlMPO_8{stroke-dasharray:273 275;stroke-dashoffset:274;animation:TLjNlMPO_draw 4000ms ease-out 54ms forwards;}.TLjNlMPO_9{stroke-dasharray:259 261;stroke-dashoffset:260;animation:TLjNlMPO_draw 4000ms ease-out 61ms forwards;}.TLjNlMPO_10{stroke-dasharray:1097 1099;stroke-dashoffset:1098;animation:TLjNlMPO_draw 4000ms ease-out 68ms forwards;}.TLjNlMPO_11{stroke-dasharray:664 666;stroke-dashoffset:665;animation:TLjNlMPO_draw 4000ms ease-out 74ms forwards;}.TLjNlMPO_12{stroke-dasharray:682 684;stroke-dashoffset:683;animation:TLjNlMPO_draw 4000ms ease-out 81ms forwards;}.TLjNlMPO_13{stroke-dasharray:327 329;stroke-dashoffset:328;animation:TLjNlMPO_draw 4000ms ease-out 88ms forwards;}.TLjNlMPO_14{stroke-dasharray:156 158;stroke-dashoffset:157;animation:TLjNlMPO_draw 4000ms ease-out 95ms forwards;}.TLjNlMPO_15{stroke-dasharray:130 132;stroke-dashoffset:131;animation:TLjNlMPO_draw 4000ms ease-out 102ms forwards;}.TLjNlMPO_16{stroke-dasharray:139 141;stroke-dashoffset:140;animation:TLjNlMPO_draw 4000ms ease-out 108ms forwards;}.TLjNlMPO_17{stroke-dasharray:87 89;stroke-dashoffset:88;animation:TLjNlMPO_draw 4000ms ease-out 115ms forwards;}.TLjNlMPO_18{stroke-dasharray:47 49;stroke-dashoffset:48;animation:TLjNlMPO_draw 4000ms ease-out 122ms forwards;}.TLjNlMPO_19{stroke-dasharray:39 41;stroke-dashoffset:40;animation:TLjNlMPO_draw 4000ms ease-out 129ms forwards;}.TLjNlMPO_20{stroke-dasharray:27 29;stroke-dashoffset:28;animation:TLjNlMPO_draw 4000ms ease-out 136ms forwards;}.TLjNlMPO_21{stroke-dasharray:25 27;stroke-dashoffset:26;animation:TLjNlMPO_draw 4000ms ease-out 142ms forwards;}.TLjNlMPO_22{stroke-dasharray:830 832;stroke-dashoffset:831;animation:TLjNlMPO_draw 4000ms ease-out 149ms forwards;}.TLjNlMPO_23{stroke-dasharray:846 848;stroke-dashoffset:847;animation:TLjNlMPO_draw 4000ms ease-out 156ms forwards;}.TLjNlMPO_24{stroke-dasharray:709 711;stroke-dashoffset:710;animation:TLjNlMPO_draw 4000ms ease-out 163ms forwards;}.TLjNlMPO_25{stroke-dasharray:239 241;stroke-dashoffset:240;animation:TLjNlMPO_draw 4000ms ease-out 170ms forwards;}.TLjNlMPO_26{stroke-dasharray:194 196;stroke-dashoffset:195;animation:TLjNlMPO_draw 4000ms ease-out 176ms forwards;}.TLjNlMPO_27{stroke-dasharray:2558 2560;stroke-dashoffset:2559;animation:TLjNlMPO_draw 4000ms ease-out 183ms forwards;}.TLjNlMPO_28{stroke-dasharray:657 659;stroke-dashoffset:658;animation:TLjNlMPO_draw 4000ms ease-out 190ms forwards;}.TLjNlMPO_29{stroke-dasharray:661 663;stroke-dashoffset:662;animation:TLjNlMPO_draw 4000ms ease-out 197ms forwards;}.TLjNlMPO_30{stroke-dasharray:873 875;stroke-dashoffset:874;animation:TLjNlMPO_draw 4000ms ease-out 204ms forwards;}.TLjNlMPO_31{stroke-dasharray:598 600;stroke-dashoffset:599;animation:TLjNlMPO_draw 4000ms ease-out 210ms forwards;}.TLjNlMPO_32{stroke-dasharray:350 352;stroke-dashoffset:351;animation:TLjNlMPO_draw 4000ms ease-out 217ms forwards;}.TLjNlMPO_33{stroke-dasharray:56 58;stroke-dashoffset:57;animation:TLjNlMPO_draw 4000ms ease-out 224ms forwards;}.TLjNlMPO_34{stroke-dasharray:53 55;stroke-dashoffset:54;animation:TLjNlMPO_draw 4000ms ease-out 231ms forwards;}.TLjNlMPO_35{stroke-dasharray:47 49;stroke-dashoffset:48;animation:TLjNlMPO_draw 4000ms ease-out 238ms forwards;}.TLjNlMPO_36{stroke-dasharray:44 46;stroke-dashoffset:45;animation:TLjNlMPO_draw 4000ms ease-out 244ms forwards;}.TLjNlMPO_37{stroke-dasharray:39 41;stroke-dashoffset:40;animation:TLjNlMPO_draw 4000ms ease-out 251ms forwards;}.TLjNlMPO_38{stroke-dasharray:103 105;stroke-dashoffset:104;animation:TLjNlMPO_draw 4000ms ease-out 258ms forwards;}.TLjNlMPO_39{stroke-dasharray:28 30;stroke-dashoffset:29;animation:TLjNlMPO_draw 4000ms ease-out 265ms forwards;}.TLjNlMPO_40{stroke-dasharray:22 24;stroke-dashoffset:23;animation:TLjNlMPO_draw 4000ms ease-out 272ms forwards;}.TLjNlMPO_41{stroke-dasharray:31 33;stroke-dashoffset:32;animation:TLjNlMPO_draw 4000ms ease-out 278ms forwards;}.TLjNlMPO_42{stroke-dasharray:33 35;stroke-dashoffset:34;animation:TLjNlMPO_draw 4000ms ease-out 285ms forwards;}.TLjNlMPO_43{stroke-dasharray:22 24;stroke-dashoffset:23;animation:TLjNlMPO_draw 4000ms ease-out 292ms forwards;}.TLjNlMPO_44{stroke-dasharray:10 12;stroke-dashoffset:11;animation:TLjNlMPO_draw 4000ms ease-out 299ms forwards;}.TLjNlMPO_45{stroke-dasharray:5 7;stroke-dashoffset:6;animation:TLjNlMPO_draw 4000ms ease-out 306ms forwards;}.TLjNlMPO_46{stroke-dasharray:1822 1824;stroke-dashoffset:1823;animation:TLjNlMPO_draw 4000ms ease-out 312ms forwards;}.TLjNlMPO_47{stroke-dasharray:78 80;stroke-dashoffset:79;animation:TLjNlMPO_draw 4000ms ease-out 319ms forwards;}.TLjNlMPO_48{stroke-dasharray:51 53;stroke-dashoffset:52;animation:TLjNlMPO_draw 4000ms ease-out 326ms forwards;}.TLjNlMPO_49{stroke-dasharray:203 205;stroke-dashoffset:204;animation:TLjNlMPO_draw 4000ms ease-out 333ms forwards;}.TLjNlMPO_50{stroke-dasharray:343 345;stroke-dashoffset:344;animation:TLjNlMPO_draw 4000ms ease-out 340ms forwards;}.TLjNlMPO_51{stroke-dasharray:649 651;stroke-dashoffset:650;animation:TLjNlMPO_draw 4000ms ease-out 346ms forwards;}.TLjNlMPO_52{stroke-dasharray:443 445;stroke-dashoffset:444;animation:TLjNlMPO_draw 4000ms ease-out 353ms forwards;}.TLjNlMPO_53{stroke-dasharray:937 939;stroke-dashoffset:938;animation:TLjNlMPO_draw 4000ms ease-out 360ms forwards;}.TLjNlMPO_54{stroke-dasharray:403 405;stroke-dashoffset:404;animation:TLjNlMPO_draw 4000ms ease-out 367ms forwards;}.TLjNlMPO_55{stroke-dasharray:965 967;stroke-dashoffset:966;animation:TLjNlMPO_draw 4000ms ease-out 374ms forwards;}.TLjNlMPO_56{stroke-dasharray:297 299;stroke-dashoffset:298;animation:TLjNlMPO_draw 4000ms ease-out 380ms forwards;}.TLjNlMPO_57{stroke-dasharray:236 238;stroke-dashoffset:237;animation:TLjNlMPO_draw 4000ms ease-out 387ms forwards;}.TLjNlMPO_58{stroke-dasharray:210 212;stroke-dashoffset:211;animation:TLjNlMPO_draw 4000ms ease-out 394ms forwards;}.TLjNlMPO_59{stroke-dasharray:236 238;stroke-dashoffset:237;animation:TLjNlMPO_draw 4000ms ease-out 401ms forwards;}.TLjNlMPO_60{stroke-dasharray:231 233;stroke-dashoffset:232;animation:TLjNlMPO_draw 4000ms ease-out 408ms forwards;}.TLjNlMPO_61{stroke-dasharray:1199 1201;stroke-dashoffset:1200;animation:TLjNlMPO_draw 4000ms ease-out 414ms forwards;}.TLjNlMPO_62{stroke-dasharray:127 129;stroke-dashoffset:128;animation:TLjNlMPO_draw 4000ms ease-out 421ms forwards;}.TLjNlMPO_63{stroke-dasharray:101 103;stroke-dashoffset:102;animation:TLjNlMPO_draw 4000ms ease-out 428ms forwards;}.TLjNlMPO_64{stroke-dasharray:728 730;stroke-dashoffset:729;animation:TLjNlMPO_draw 4000ms ease-out 435ms forwards;}.TLjNlMPO_65{stroke-dasharray:518 520;stroke-dashoffset:519;animation:TLjNlMPO_draw 4000ms ease-out 442ms forwards;}.TLjNlMPO_66{stroke-dasharray:343 345;stroke-dashoffset:344;animation:TLjNlMPO_draw 4000ms ease-out 448ms forwards;}.TLjNlMPO_67{stroke-dasharray:24 26;stroke-dashoffset:25;animation:TLjNlMPO_draw 4000ms ease-out 455ms forwards;}.TLjNlMPO_68{stroke-dasharray:16 18;stroke-dashoffset:17;animation:TLjNlMPO_draw 4000ms ease-out 462ms forwards;}.TLjNlMPO_69{stroke-dasharray:15 17;stroke-dashoffset:16;animation:TLjNlMPO_draw 4000ms ease-out 469ms forwards;}.TLjNlMPO_70{stroke-dasharray:889 891;stroke-dashoffset:890;animation:TLjNlMPO_draw 4000ms ease-out 476ms forwards;}.TLjNlMPO_71{stroke-dasharray:298 300;stroke-dashoffset:299;animation:TLjNlMPO_draw 4000ms ease-out 482ms forwards;}.TLjNlMPO_72{stroke-dasharray:237 239;stroke-dashoffset:238;animation:TLjNlMPO_draw 4000ms ease-out 489ms forwards;}.TLjNlMPO_73{stroke-dasharray:320 322;stroke-dashoffset:321;animation:TLjNlMPO_draw 4000ms ease-out 496ms forwards;}.TLjNlMPO_74{stroke-dasharray:444 446;stroke-dashoffset:445;animation:TLjNlMPO_draw 4000ms ease-out 503ms forwards;}.TLjNlMPO_75{stroke-dasharray:313 315;stroke-dashoffset:314;animation:TLjNlMPO_draw 4000ms ease-out 510ms forwards;}.TLjNlMPO_76{stroke-dasharray:72 74;stroke-dashoffset:73;animation:TLjNlMPO_draw 4000ms ease-out 517ms forwards;}.TLjNlMPO_77{stroke-dasharray:82 84;stroke-dashoffset:83;animation:TLjNlMPO_draw 4000ms ease-out 523ms forwards;}.TLjNlMPO_78{stroke-dasharray:79 81;stroke-dashoffset:80;animation:TLjNlMPO_draw 4000ms ease-out 530ms forwards;}.TLjNlMPO_79{stroke-dasharray:503 505;stroke-dashoffset:504;animation:TLjNlMPO_draw 4000ms ease-out 537ms forwards;}.TLjNlMPO_80{stroke-dasharray:45 47;stroke-dashoffset:46;animation:TLjNlMPO_draw 4000ms ease-out 544ms forwards;}.TLjNlMPO_81{stroke-dasharray:45 47;stroke-dashoffset:46;animation:TLjNlMPO_draw 4000ms ease-out 551ms forwards;}.TLjNlMPO_82{stroke-dasharray:47 49;stroke-dashoffset:48;animation:TLjNlMPO_draw 4000ms ease-out 557ms forwards;}.TLjNlMPO_83{stroke-dasharray:58 60;stroke-dashoffset:59;animation:TLjNlMPO_draw 4000ms ease-out 564ms forwards;}.TLjNlMPO_84{stroke-dasharray:57 59;stroke-dashoffset:58;animation:TLjNlMPO_draw 4000ms ease-out 571ms forwards;}.TLjNlMPO_85{stroke-dasharray:38 40;stroke-dashoffset:39;animation:TLjNlMPO_draw 4000ms ease-out 578ms forwards;}.TLjNlMPO_86{stroke-dasharray:44 46;stroke-dashoffset:45;animation:TLjNlMPO_draw 4000ms ease-out 585ms forwards;}.TLjNlMPO_87{stroke-dasharray:33 35;stroke-dashoffset:34;animation:TLjNlMPO_draw 4000ms ease-out 591ms forwards;}.TLjNlMPO_88{stroke-dasharray:46 48;stroke-dashoffset:47;animation:TLjNlMPO_draw 4000ms ease-out 598ms forwards;}.TLjNlMPO_89{stroke-dasharray:62 64;stroke-dashoffset:63;animation:TLjNlMPO_draw 4000ms ease-out 605ms forwards;}.TLjNlMPO_90{stroke-dasharray:55 57;stroke-dashoffset:56;animation:TLjNlMPO_draw 4000ms ease-out 612ms forwards;}.TLjNlMPO_91{stroke-dasharray:61 63;stroke-dashoffset:62;animation:TLjNlMPO_draw 4000ms ease-out 619ms forwards;}.TLjNlMPO_92{stroke-dasharray:49 51;stroke-dashoffset:50;animation:TLjNlMPO_draw 4000ms ease-out 625ms forwards;}.TLjNlMPO_93{stroke-dasharray:31 33;stroke-dashoffset:32;animation:TLjNlMPO_draw 4000ms ease-out 632ms forwards;}.TLjNlMPO_94{stroke-dasharray:50 52;stroke-dashoffset:51;animation:TLjNlMPO_draw 4000ms ease-out 639ms forwards;}.TLjNlMPO_95{stroke-dasharray:67 69;stroke-dashoffset:68;animation:TLjNlMPO_draw 4000ms ease-out 646ms forwards;}.TLjNlMPO_96{stroke-dasharray:40 42;stroke-dashoffset:41;animation:TLjNlMPO_draw 4000ms ease-out 653ms forwards;}.TLjNlMPO_97{stroke-dasharray:37 39;stroke-dashoffset:38;animation:TLjNlMPO_draw 4000ms ease-out 659ms forwards;}.TLjNlMPO_98{stroke-dasharray:57 59;stroke-dashoffset:58;animation:TLjNlMPO_draw 4000ms ease-out 666ms forwards;}.TLjNlMPO_99{stroke-dasharray:35 37;stroke-dashoffset:36;animation:TLjNlMPO_draw 4000ms ease-out 673ms forwards;}.TLjNlMPO_100{stroke-dasharray:930 932;stroke-dashoffset:931;animation:TLjNlMPO_draw 4000ms ease-out 680ms forwards;}.TLjNlMPO_101{stroke-dasharray:314 316;stroke-dashoffset:315;animation:TLjNlMPO_draw 4000ms ease-out 687ms forwards;}.TLjNlMPO_102{stroke-dasharray:935 937;stroke-dashoffset:936;animation:TLjNlMPO_draw 4000ms ease-out 693ms forwards;}.TLjNlMPO_103{stroke-dasharray:367 369;stroke-dashoffset:368;animation:TLjNlMPO_draw 4000ms ease-out 700ms forwards;}.TLjNlMPO_104{stroke-dasharray:292 294;stroke-dashoffset:293;animation:TLjNlMPO_draw 4000ms ease-out 707ms forwards;}.TLjNlMPO_105{stroke-dasharray:362 364;stroke-dashoffset:363;animation:TLjNlMPO_draw 4000ms ease-out 714ms forwards;}.TLjNlMPO_106{stroke-dasharray:343 345;stroke-dashoffset:344;animation:TLjNlMPO_draw 4000ms ease-out 721ms forwards;}.TLjNlMPO_107{stroke-dasharray:142 144;stroke-dashoffset:143;animation:TLjNlMPO_draw 4000ms ease-out 727ms forwards;}.TLjNlMPO_108{stroke-dasharray:146 148;stroke-dashoffset:147;animation:TLjNlMPO_draw 4000ms ease-out 734ms forwards;}.TLjNlMPO_109{stroke-dasharray:188 190;stroke-dashoffset:189;animation:TLjNlMPO_draw 4000ms ease-out 741ms forwards;}.TLjNlMPO_110{stroke-dasharray:108 110;stroke-dashoffset:109;animation:TLjNlMPO_draw 4000ms ease-out 748ms forwards;}.TLjNlMPO_111{stroke-dasharray:179 181;stroke-dashoffset:180;animation:TLjNlMPO_draw 4000ms ease-out 755ms forwards;}.TLjNlMPO_112{stroke-dasharray:98 100;stroke-dashoffset:99;animation:TLjNlMPO_draw 4000ms ease-out 761ms forwards;}.TLjNlMPO_113{stroke-dasharray:153 155;stroke-dashoffset:154;animation:TLjNlMPO_draw 4000ms ease-out 768ms forwards;}.TLjNlMPO_114{stroke-dasharray:585 587;stroke-dashoffset:586;animation:TLjNlMPO_draw 4000ms ease-out 775ms forwards;}.TLjNlMPO_115{stroke-dasharray:377 379;stroke-dashoffset:378;animation:TLjNlMPO_draw 4000ms ease-out 782ms forwards;}.TLjNlMPO_116{stroke-dasharray:78 80;stroke-dashoffset:79;animation:TLjNlMPO_draw 4000ms ease-out 789ms forwards;}.TLjNlMPO_117{stroke-dasharray:207 209;stroke-dashoffset:208;animation:TLjNlMPO_draw 4000ms ease-out 795ms forwards;}.TLjNlMPO_118{stroke-dasharray:99 101;stroke-dashoffset:100;animation:TLjNlMPO_draw 4000ms ease-out 802ms forwards;}.TLjNlMPO_119{stroke-dasharray:29 31;stroke-dashoffset:30;animation:TLjNlMPO_draw 4000ms ease-out 809ms forwards;}.TLjNlMPO_120{stroke-dasharray:4146 4148;stroke-dashoffset:4147;animation:TLjNlMPO_draw 4000ms ease-out 816ms forwards;}.TLjNlMPO_121{stroke-dasharray:207 209;stroke-dashoffset:208;animation:TLjNlMPO_draw 4000ms ease-out 823ms forwards;}.TLjNlMPO_122{stroke-dasharray:349 351;stroke-dashoffset:350;animation:TLjNlMPO_draw 4000ms ease-out 829ms forwards;}.TLjNlMPO_123{stroke-dasharray:214 216;stroke-dashoffset:215;animation:TLjNlMPO_draw 4000ms ease-out 836ms forwards;}.TLjNlMPO_124{stroke-dasharray:214 216;stroke-dashoffset:215;animation:TLjNlMPO_draw 4000ms ease-out 843ms forwards;}.TLjNlMPO_125{stroke-dasharray:214 216;stroke-dashoffset:215;animation:TLjNlMPO_draw 4000ms ease-out 850ms forwards;}.TLjNlMPO_126{stroke-dasharray:212 214;stroke-dashoffset:213;animation:TLjNlMPO_draw 4000ms ease-out 857ms forwards;}.TLjNlMPO_127{stroke-dasharray:789 791;stroke-dashoffset:790;animation:TLjNlMPO_draw 4000ms ease-out 863ms forwards;}.TLjNlMPO_128{stroke-dasharray:773 775;stroke-dashoffset:774;animation:TLjNlMPO_draw 4000ms ease-out 870ms forwards;}.TLjNlMPO_129{stroke-dasharray:182 184;stroke-dashoffset:183;animation:TLjNlMPO_draw 4000ms ease-out 877ms forwards;}.TLjNlMPO_130{stroke-dasharray:105 107;stroke-dashoffset:106;animation:TLjNlMPO_draw 4000ms ease-out 884ms forwards;}.TLjNlMPO_131{stroke-dasharray:79 81;stroke-dashoffset:80;animation:TLjNlMPO_draw 4000ms ease-out 891ms forwards;}.TLjNlMPO_132{stroke-dasharray:50 52;stroke-dashoffset:51;animation:TLjNlMPO_draw 4000ms ease-out 897ms forwards;}.TLjNlMPO_133{stroke-dasharray:124 126;stroke-dashoffset:125;animation:TLjNlMPO_draw 4000ms ease-out 904ms forwards;}.TLjNlMPO_134{stroke-dasharray:113 115;stroke-dashoffset:114;animation:TLjNlMPO_draw 4000ms ease-out 911ms forwards;}.TLjNlMPO_135{stroke-dasharray:73 75;stroke-dashoffset:74;animation:TLjNlMPO_draw 4000ms ease-out 918ms forwards;}.TLjNlMPO_136{stroke-dasharray:79 81;stroke-dashoffset:80;animation:TLjNlMPO_draw 4000ms ease-out 925ms forwards;}.TLjNlMPO_137{stroke-dasharray:107 109;stroke-dashoffset:108;animation:TLjNlMPO_draw 4000ms ease-out 931ms forwards;}.TLjNlMPO_138{stroke-dasharray:126 128;stroke-dashoffset:127;animation:TLjNlMPO_draw 4000ms ease-out 938ms forwards;}.TLjNlMPO_139{stroke-dasharray:55 57;stroke-dashoffset:56;animation:TLjNlMPO_draw 4000ms ease-out 945ms forwards;}.TLjNlMPO_140{stroke-dasharray:47 49;stroke-dashoffset:48;animation:TLjNlMPO_draw 4000ms ease-out 952ms forwards;}.TLjNlMPO_141{stroke-dasharray:33 35;stroke-dashoffset:34;animation:TLjNlMPO_draw 4000ms ease-out 959ms forwards;}.TLjNlMPO_142{stroke-dasharray:132 134;stroke-dashoffset:133;animation:TLjNlMPO_draw 4000ms ease-out 965ms forwards;}.TLjNlMPO_143{stroke-dasharray:143 145;stroke-dashoffset:144;animation:TLjNlMPO_draw 4000ms ease-out 972ms forwards;}.TLjNlMPO_144{stroke-dasharray:113 115;stroke-dashoffset:114;animation:TLjNlMPO_draw 4000ms ease-out 979ms forwards;}.TLjNlMPO_145{stroke-dasharray:526 528;stroke-dashoffset:527;animation:TLjNlMPO_draw 4000ms ease-out 986ms forwards;}.TLjNlMPO_146{stroke-dasharray:279 281;stroke-dashoffset:280;animation:TLjNlMPO_draw 4000ms ease-out 993ms forwards;}.TLjNlMPO_147{stroke-dasharray:125 127;stroke-dashoffset:126;animation:TLjNlMPO_draw 4000ms ease-out 999ms forwards;}@keyframes TLjNlMPO_draw{100%{stroke-dashoffset:0;}}@keyframes TLjNlMPO_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+

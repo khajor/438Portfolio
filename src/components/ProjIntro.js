@@ -51,7 +51,6 @@ function ProjectIntro({ bg, title, tagline, tcolor }) {
 					<h2 style={{ color: tcolor}}>{title}</h2>
 					<h3>{tagline}</h3>
 				</div>
-				<img src="abc.com" alt="market mate ipad mockups"></img>
 			</div>
 			<div className="projin-head-text-m">
 				<h2 style={{marginBottom: '.2rem' }}>{title}</h2>

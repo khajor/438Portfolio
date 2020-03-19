@@ -14,19 +14,19 @@ const featured=[
 	},
 
     {title: 'Essence',
-	date:'Sring 2018',
+	date:'Fall 2018',
     sum:'Lorem ipsum filler lorem solor fill text about a project fill sum dolor Lor Lor Loreming',
 	img:'',
 	bgColor:'#7497e9',
-	url:'/mm'
+	url:'/es'
 	},
 
 	{title: 'Cashflow',
-	date:'2019',
+	date:'Fall 2019',
     sum:'Lor lor emipsum. Dolor filler text project fill IpLoreem ipsum abouto a project at some point',
 	img:'',
 	bgColor:'#3c8fb5',
-	url:'/mm'
+	url:'/cf'
 	}
 ]
 
