@@ -19,7 +19,7 @@
         "gatsby-plugin-sass": "^2.1.28",
         "gatsby-plugin-transition-link": "^1.17.8",
         "gsap": "^3.2.4",
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "react": "^16.12.0",
         "react-animate-on-scroll": "^2.1.5",
         "react-dom": "^16.12.0",
